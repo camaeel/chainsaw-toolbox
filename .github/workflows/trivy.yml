@@ -16,7 +16,13 @@ on:
       - '/*.md'
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ "*" ]
+    branches:
+    - "*"
+    paths-ignore:
+      - 'charts/**'
+      - 'docs/**'
+      - 'example/**'
+      - '/*.md'
   schedule:
     - cron: '37 5 * * 4'
 
